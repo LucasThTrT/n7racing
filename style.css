@@ -645,6 +645,7 @@ section.poles {
 
 /* FOOTER */
 footer {
+    display: flex;
     position: relative;
     width: 100%;
     padding-top: 5px;
@@ -683,7 +684,7 @@ footer .map {
 }
 
 /* Formulaire de contact */
-
+/*
 .contact-col{
     background: #000000;
 }
@@ -714,4 +715,4 @@ footer .map {
         .contact-col button:hover{
             background: linear-gradient(to right, #652483, #404b9a);
             color: #ffffff;
-        }
+        }*/
