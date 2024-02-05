@@ -1,5 +1,5 @@
 <?php    
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
         $name = $_POST['name'];
         $visitor_email = $_POST['email'];
         $subject = $_POST['subject'];
@@ -22,6 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         mail($to,$email_subject,$email_body,$headers);
         
-        echo "<p>Votre Formulaire a bien été transmis</p>";
-    }  
+        echo "<p>Votre Formulaire a bien été transmis</p>"; 
+        
 ?>
