@@ -14,7 +14,7 @@ a {
 
 /* PRELOADER */
 #preloader{
-    background: #EEEDF0 url(img/ezgif-3-5a4b29c94d53-1.webp) no-repeat center center;
+    background: #000000 url(img/loading.gif) no-repeat center center;
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -26,7 +26,7 @@ a {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 270px;
+        width: 185px;
     }
 
 
