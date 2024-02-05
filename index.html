@@ -30,10 +30,13 @@
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJF8W4XV"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJF8W4XV"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <img class="fond" src="./img/voiture_presentation.png">
+<div id="preloader">
+    <img src="img/logo/N7RTrond.png" alt="">
+</div>
+    <img class="fond" loading="lazy" src="./img/voiture_presentation.png">
     <header>
         <nav>
             <a class="logo_head" href="index.html"><img src="./img/logo/N7RTrond.png"></a>
@@ -237,8 +240,16 @@ Spécialisée en électronique, électrotechnique, mécanique des fluides et inf
             <button type="submit" value="Submit" class="hero-btn red-btn">Envoyer</button>
         </form>
     </div>-->
+
 <script>
     AOS.init();
+</script>
+
+<script>
+    var loader = document.getElementById('preloader');
+    window.addEventListener('load', function(){
+        loader.style.display = 'none';
+    })
 </script>
     </body>
 </html>
