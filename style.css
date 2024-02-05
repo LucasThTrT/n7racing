@@ -677,6 +677,10 @@ footer p, footer a {
     color: inherit;
 }
 
+    footer a{
+        display: inline-block;
+    }
+
 
 footer .map {
     padding:3%;
