@@ -141,13 +141,14 @@ Pour les écrans de téléphones
                 }
 
                 .nav-links ul li a:hover,
-                .nav-links ul li a.active{
+                /*.nav-links ul li a.active*/
+                .nav-links ul li .acceuil{
                     background: linear-gradient(to right, #652483, #404b9a);
                     color: #fff;
                 }
 
 
-                @media(max-width: 800px){
+                @media (max-width: 800px){
                     
                     nav img{
                         width: 150px;
