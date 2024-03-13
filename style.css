@@ -1,7 +1,7 @@
 /* Global CSS properties */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #1D1D1D, #111111);
@@ -51,7 +51,7 @@ header {
     /* image de fond de mon header */
     /*background-image: url('img/expofs-min-resize.jpg');*/
     background-position: center;
-    background-image: url('img/Archive/MagnyCours-88.jpg');
+    background-image: url('img/groupeN7RT.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
