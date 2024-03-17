@@ -7,4 +7,4 @@ WEB_DIR=~/n7racing
 cd $WEB_DIR || exit
 
 # Mettre à jour le dépôt Git
-git pull origin master
+git pull origin main
