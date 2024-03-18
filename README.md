@@ -1,4 +1,4 @@
-# n7racing aa
+# n7racing
 Voici le git du site internet de notre association n7racing.fr
 
 Pour le moment uniquement un site vitrine fait en html/css
