@@ -142,7 +142,7 @@ Pour les écrans de téléphones
 
                 .nav-links ul li a:hover,
                 /*.nav-links ul li a.active*/
-                .nav-links ul li .acceuil{
+                .nav-links ul li .active{
                     background: linear-gradient(to right, #652483, #404b9a);
                     color: #fff;
                 }
@@ -741,3 +741,7 @@ footer .map {
             background: linear-gradient(to right, #652483, #404b9a);
             color: #ffffff;
         }*/
+
+
+/* CSS POUR EQUIPE */
+.hero-equipe
