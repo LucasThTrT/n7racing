@@ -30,6 +30,13 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -52,10 +59,10 @@
             <div class="nav-links">
                 <ul>
                     <li><a class="active index" href="index.html">Accueil</a></li>
-                    <li><a class="index" href="equipe.html">Equipe</a></li>
+                    <li><a class="index" href="#equipe">Equipe</a></li>
                     <!--<li><a class="index" href="index.html">Voiture</a></li>-->
-                    <li><a class="index" href="partenaires.html">Partenaires</a></li>
-                    <li><a class="index" href="contact.html">Contact</a></li>-
+                    <li><a class="index" href="#partenaires">Partenaires</a></li>
+                    <li><a class="index" href="#contact">Contact</a></li>-
                 </ul>
             </div>
         </nav>
@@ -87,7 +94,7 @@
         </div>
           <div class="container">
             <div class="card">
-                <img src="img/illustration_data.png" alt="data">
+                <img src="img/illustration_data.png" alt="data"> <!-- AJOUTER LE LIEN VERS LES POLS AVEC a -->
                 <div class="intro">
                     <h1>DATA</h1>
                     <p>Conception de l'électronique embarqué et création du Digital Twin</p>
@@ -193,9 +200,18 @@ Spécialisée en électronique, électrotechnique, mécanique des fluides et inf
         <div class="partenaires" id="partenaires">
             <h1 data-aos="fade-up"><abbr>NOS PARTENAIRES</abbr></h1>
             <div class="photo">
-                <a target="_blank" href="https://www.continental.com/fr-fr/"><img src="img/logo/Continental_Logo__1.webp"></a>
-                <a target="_blank" href="https://ain7.com/fr/n7developpement/"><img src="img/logo/n7_dev.jpeg"></a>
-                <a target="_blank" href="https://www.enseeiht.fr/fr/index.html"><img src="img/logo/n7.png"></a>
+                <div class="premier">
+                    <a target="_blank" href="https://www.continental.com/fr-fr/"><img src="img/logo/Continental_Logo__1.webp"></a>
+                    <a target="_blank" href="https://www.nxp.com/"><img src="img/logo/NXP.png"></a>
+                </div>
+                <div class="deuxieme">
+                    <a target="_blank" href="https://ain7.com/fr/n7developpement/"><img src="img/logo/n7_dev.jpeg"></a>
+                    <a target="_blank" href="https://www.enseeiht.fr/fr/index.html"><img src="img/logo/n7.png"></a>
+                    <a target="_blank" href="https://ain7.com/fr/"><img src="img/logo/AIN7.jpeg"></a>
+                </div>
+                <div class="troisieme">
+                    <a target="_blank" href="https://www.norelem.fr/fr/"><img src="img/logo/norelem.png"></a>
+                </div>
             </div>
         </div>
     </article>

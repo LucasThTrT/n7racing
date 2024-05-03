@@ -1,10 +1,19 @@
 /* Global CSS properties */
 
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #1D1D1D, #111111);
+}
+
+
+/* Font Next Avenir like */
+
+body {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 a {
@@ -242,9 +251,7 @@ Pour les écrans de téléphones
 
         h1.titre {
             color: #ffffff;
-            font-family: 'Montserrat', sans-serif;
             font-size: 7rem;
-            font-style: normal;
             font-weight: 700;
             line-height:5rem;
         }
@@ -298,7 +305,6 @@ Pour les écrans de téléphones
 
 h1 {
     padding:3% 6% 0% 6%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
@@ -309,7 +315,6 @@ h1 {
 
 h2 {
     padding: 0% 1% 4% 1%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 400;
@@ -320,7 +325,6 @@ h2 {
 
 p {
     padding: 0% 6%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -649,7 +653,27 @@ section.poles {
 
     .partenaires h1{
         margin: 0 0 3% 0;
+        font-weight: 800;
+        font-size: 4rem;
     }
+
+    div .premier, div .deuxieme{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0% 2%;
+        width: 100%;
+    }
+
+        .premier a{
+            margin: 0 10px;
+        }
+
+        .deuxieme a{
+            margin: 0 25px;
+        }
+
 
     .partenaires .photo{
         display: flex;
@@ -744,4 +768,52 @@ footer .map {
 
 
 /* CSS POUR EQUIPE */
-.hero-equipe
+/* Pour l'image mettre la vidéo de basto qui présente l'asso !*/
+body.equipe{
+    background-color: #fff;
+}
+    article .pole{
+        padding: 5% 5%;
+        position: absolute;
+        height: auto; /* peut etre fixé a 100% Hauteur ?*/
+        background-color: #652483;
+    }
+
+    article .pole h1{
+        padding: 0;
+        margin: 0;
+    }
+
+/* Pole DATA */
+/* fond animé ou rapport avec le numérique */
+.data .d1{
+    position: relative;
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-top: 40px;
+}
+
+    .data img.data1{
+        z-index: 1;
+        width: 33%;
+        height: auto;
+        left : 10%
+    }
+
+.data .d2{
+    position: relative;
+    display: flex;
+    padding-right: 10%;
+    padding-bottom: 10px;
+}
+
+    .data img.data2{
+        z-index: 1;
+        width: 33%;
+        height: 20%;
+        left : 10%;
+    }
+
+/* Pôle Mécanique */
+/* Vidéo ou photo + Séparation des sous pôles */
