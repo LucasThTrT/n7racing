@@ -783,18 +783,21 @@ footer .map {
         }*/
 
 
-/* CSS POUR EQUIPE */
-/* Pour l'image mettre la vidéo de basto qui présente l'asso !*/
+/* CSS POUR LES MEMBRES DE L'EQUIPE */
+/* Mise en page classique */
 body.equipe {
     background-color: #fff;
 }
 
-article .pole {
+article {
     padding: 5% 5%;
     position: absolute;
     height: auto;
-    /* peut etre fixé a 100% Hauteur ?*/
     background-color: #652483;
+}
+
+article .pole {
+    margin-bottom: 5%;
 }
 
 article .pole h1 {
@@ -802,33 +805,57 @@ article .pole h1 {
     margin: 0;
 }
 
-/* CSS POUR LES MEMBRES DE L'EQUIPE */
-/* Mise en page classique */
-.data .p1 {
+.pole .p1,
+.pole .p2 {
     position: relative;
     display: flex;
-    padding-left: 10%;
-    padding-bottom: 10%;
-    padding-top: 40px;
+    align-items: center;
+    padding: 40px 10% 10%;
 }
 
-.data img.partie1 {
+.pole img.partie1,
+.pole img.partie2 {
     z-index: 1;
     width: 33%;
     height: auto;
-    left: 10%
 }
 
-.data .p2 {
-    position: relative;
-    display: flex;
-    padding-right: 10%;
+.pole .p2 {
     padding-bottom: 10px;
 }
 
-.data img.partie2 {
-    z-index: 1;
-    width: 33%;
-    height: auto;
-    left: 10%;
+/* Media Query pour changer la disposition sur les écrans plus petits */
+@media (max-width: 900px) {
+    .pole p{
+        align-items: center;
+        padding: 20px 10%;
+    }
+
+    .pole .p1,
+    .pole .p2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10%;
+    }
+
+    .pole .p1 p.partie1{
+        margin-bottom: 10px;
+    }
+
+    .pole .p2 p.partie2{
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .pole img.partie1,
+    .pole img.partie2 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .pole .p1 .data1,
+    .pole .p2 .data2 {
+        width: 100%;
+        text-align: justify;
+    }
 }
