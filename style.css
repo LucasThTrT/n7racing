@@ -157,8 +157,8 @@ Pour les écrans de téléphones
                 }
 
 
-                @media (max-width: 800px){
-                    
+                @media screen and (max-device-width: 800px) and (orientation: portrait){
+                    /* Burger menu uniquement pour les mobiles si width < 800px et orientation portrait */
                     nav img{
                         width: 150px;
                         top: 25px
@@ -210,7 +210,7 @@ Pour les écrans de téléphones
 
                         .nav-links ul li a{
                             font-size: 5rem;
-                            color: #ffffff;
+                            color: red;
                         }
                         .nav-links ul li a:hover,
                         .nav-links ul li a.active{
