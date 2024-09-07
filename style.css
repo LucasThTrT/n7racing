@@ -10,10 +10,10 @@ body {
 /* Font Next Avenir like */
 
 body {
-  font-family: "Sen", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 a {
@@ -183,20 +183,18 @@ Pour les écrans de téléphones
                         display: block;
                     }
                     
-
-                    /** PROBLEME DANS LA NAVBAR QUAND WIDTH AUGMENTE */
                     .nav-links{
                         display: none;
-                        position: absolute;
+                        position: fixed;
                         top: 0;
                         left: 0;        
                         width: 100%;
                         height: 100vh;
-                        /*background: linear-gradient(to right, rgba(101, 36, 131, 0.7), rgba(64, 75, 154, 0.7));*/
+                        background: linear-gradient(to right, rgba(101, 36, 131, 0.7), rgba(64, 75, 154, 0.7));
                         box-shadow: 0 5px 1rem rgba(0,0,0,0.2);
                         overflow: hidden;
                         transition: max-height .6s ease;
-                        backdrop-filter: blur(15px);
+                        backdrop-filter: blur(30px);
                         transform: translate3d(0, 0, 0); /* Pour que le blur fonctionne sur safari */
                     }               
                         .nav-links ul li{
