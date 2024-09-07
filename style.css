@@ -197,6 +197,7 @@ Pour les écrans de téléphones
                         overflow: hidden;
                         transition: max-height .6s ease;
                         backdrop-filter: blur(15px);
+                        will-change: transform;
                     }               
                         .nav-links ul li{
                             top: 3rem;
