@@ -197,7 +197,7 @@ Pour les écrans de téléphones
                         overflow: hidden;
                         transition: max-height .6s ease;
                         backdrop-filter: blur(15px);
-                        will-change: transform;
+                        transform: translate3d(0, 0, 0); /* Pour que le blur fonctionne sur safari */
                     }               
                         .nav-links ul li{
                             top: 3rem;
