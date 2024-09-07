@@ -169,6 +169,7 @@ Pour les écrans de téléphones
                         right: 4rem;
                         z-index: 2;
                         display: inline-flex;
+                        position: fixed;
                     }
 
                     #check:checked~.icons #menu-icon{
@@ -181,6 +182,8 @@ Pour les écrans de téléphones
 
                     #check:checked~.icons #close-icon{
                         display: block;
+                        position: fixed;
+                        right: 5%;
                     }
                     
                     .nav-links{
