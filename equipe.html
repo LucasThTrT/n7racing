@@ -26,10 +26,13 @@
     <title>N7 Racing Team - Equipe</title>
     <meta charset="UTF-8">
     <link rel="icon" href="./img/logo/N7RTrond.png">
-    <link rel="stylesheet" href="style.css">
+    <!--link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="equipe.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
     <body class="equipe">
         <header>
@@ -44,19 +47,49 @@
                 <div class="nav-links">
                     <ul>
                         <li><a class="index" href="index.html">Accueil</a></li>
-                        <li><a class="index active" href="equipe.html">Equipe</a></li>
+                        <li class="dropdown">
+                            <a href="equipe.html" class="dropbtn">Equipe<svg class="svg-icon svg-icon-angle-down" aria-hidden="true" role="img" focusable="false" xmlns="https://www.w3.org/2000/svg" width="21" height="32"  fill="white" viewBox="0 0 21 31">
+                                <path d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z"></path></svg></a>
+                            <div class="dropdown-content">
+                                <a href="data.html">Pôle Data</a>
+                                <a href="motorisation.html">Pôle Motorisation</a>
+                                <a href="mecanique.html">Pôle Mécanique</a>
+                                <a href="aero.html">Pôle Aérodynamique</a>
+                            </div>
+                        </li>
                         <!--<li><a class="index" href="index.html">Voiture</a></li>-->
                         <li><a class="index" href="partenaires.html">Partenaires</a></li>
                         <li><a class="index" href="contact.html">Contact</a></li>-
                     </ul>
                 </div>
             </nav>
-            <div class="hero hero-equipe">
-                <h1 class="titre">
-                    LE
-                    <br>
-                    TITRE
-                </h1>
+            <div class="card-container">
+                <div class="card">
+                    <h2>LE BUREAU</h2>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <img src="./img/bastien_richel.jpg" alt="Membre 1">
+                            <p>Bastien RICHEL, Président</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./img/sacha_girardi.jpg" alt="Membre 2">
+                            <p>Nom 2</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="./img/clément_guigon.jpg" alt="Membre 3">
+                            <p>Nom 3</p>
+                        </div>
+                        <div class="team-member membre4">
+                            <img src="./img/clément_guigon.jpg" alt="Membre 4">
+                            <p>Nom 4</p>
+                        </div>
+                        <div class="team-member membre5">
+                            <img src="./img/bastien_richel.jpg" alt="Membre 5">
+                            <p>Nom 5</p>
+                        </div>
+                    </div>    
+                    <p>Voici un exemple de contenu pour la card.</p>
+                </div>
             </div>
             <!--<script class="scroller" src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
             <dotlottie-player src="https://lottie.host/d8bd0e04-a59e-459a-8b10-7626d4c0e380/V0BP3uC2ij.json" background="visible" speed="1" style="width: 7rem; height: 100px;" loop autoplay></dotlottie-player>
@@ -64,17 +97,7 @@
         </header>
         <article>
             <div class="pole data">
-                <h1>Pôle Data</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt doloremque quod ea repellat repudiandae ex culpa ipsa natus dolores tempore, ipsum debitis labore eum nam? Pariatur magnam illum iste eius?
-                </p>
-                <div class="d1">
-                    <img class="data1" src="img/data.jpeg">
-                    <p class="data1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum eius sit ducimus molestias, facere temporibus quas dolore veniam, quasi iure fugit nobis maxime. Cupiditate eligendi culpa ullam provident corrupti.</p>
-                </div>
-                <div class="d2"> 
-                    <p class="data2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, modi deserunt. Vero quos quia, tenetur rerum rem ipsum eius porro soluta itaque debitis nostrum at mollitia cupiditate repellat repudiandae dignissimos?</p> 
-                    <img src="img/illustration_data.png" class="data2">
-                </div>
+             
             </div>
             <div class="pole motorisation">
 
