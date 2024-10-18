@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* PRELOADER */
+#preloader{
+    background: #000000 url(img/loading.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+    #preloader img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 185px;
+    }
+
+
+/* Image de fond */
+.fond{
+    z-index: -2;
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* Header */
+
+header {
+    /* Dimension de mon header = 100% de la largeur de la fenêtre 
+    et 100% de hauteur */
+    width: 100%;
+    height: 100vh;
+
+    /* image de fond de mon header */
+    /*background-image: url('img/expofs-min-resize.jpg');*/
+    background-position: center;
+    background-color:#dcdcdc00;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    min-height: 100px;
+    top: 0;
+    z-index: 10000;
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+   /* Couleur de fond du menu */
+    padding: 10px 0;       /* Ajoute un peu d'espace vertical autour du menu */
+    border-bottom: 2px solid #652483; /* Trait fin vers le bas en gris clair */
+}
+
+    nav img{
+        position: relative;
+        width: 100px;
+        border-radius: 50%; /*Pour pattern = image rond*/
+    }
+
+    #check{
+        display: none;
+    }
+
+    .icons{
+        position: absolute;
+        right: 2%;
+        font-size: 4.4rem;
+        color: #ffffff;
+        /*color: #404b9a;*/
+        cursor: pointer;
+        display: none;
+    }
+
+    .nav-links{
+        right: 10%;
+        position: absolute;
+        z-index: 1;
+        right: 3%;
+    }
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+            .nav-links ul li a{
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                padding: 6px 15px;
+                border-radius: 20px;
+                transition: 0.2s;
+            }
+
+            .nav-links ul li a.index{
+                color: #ffffff;
+            }
+
+            .nav-links ul li a:hover,
+            /*.nav-links ul li a.active*/
+            .nav-links ul li .active{
+                background: linear-gradient(to right, #652483, #404b9a);
+                color: #fff;
+            }
+
+
+            @media ((max-width: 800px) and (orientation: portrait)) or ((max-device-width: 800px) and (orientation: portrait)){
+                /* Burger menu uniquement pour les mobiles si width < 800px et orientation portrait */
+                nav img{
+                    width: 150px;
+                    top: 25px
+                }
+                .icons {
+                    font-size: 6rem;
+                    top: 4rem;
+                    right: 4rem;
+                    z-index: 2;
+                    display: inline-flex;
+                    position: fixed;
+                }
+
+                #check:checked~.icons #menu-icon{
+                    display: none;
+                }
+
+                .icons #close-icon {
+                    display: none;
+                }
+
+                #check:checked~.icons #close-icon{
+                    display: block;
+                    position: fixed;
+                    right: 5%;
+                }
+                
+                .nav-links{
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;        
+                    width: 100%;
+                    height: 100vh;
+                    background: linear-gradient(to right, rgba(101, 36, 131, 0.7), rgba(64, 75, 154, 0.7));
+                    box-shadow: 0 5px 1rem rgba(0,0,0,0.2);
+                    overflow: hidden;
+                    transition: max-height .6s ease;
+                    backdrop-filter: blur(30px);
+                    transform: translate3d(0, 0, 0); /* Pour que le blur fonctionne sur safari */
+                }               
+                    .nav-links ul li{
+                        top: 3rem;
+                        display: flex;
+                        width: auto;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                        margin: 3rem 0 20% 0;
+                    }
+
+                    .nav-links ul li a{
+                        font-size: 5rem;
+                        color: red;
+                    }
+                    .nav-links ul li a:hover,
+                    .nav-links ul li a.active{
+                        background: none;
+                        color: #ffffff;
+                    }
+
+                    #check:checked~.nav-links{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        
+            }
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden; 
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 50px;
+}
+
+.dropdown-content a {
+    color: white;
+    font-size: 1px;
+    padding: 1px 3px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn {
+    font-size: 16px;
+    display: inline-flex;  /* Flexbox pour aligner le texte et l'icône */
+    align-items: center;   /* Centrer verticalement l'icône et le texte */
+    color: white;          /* Couleur du texte en blanc */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style pour l'icône SVG */
+.svg-icon {
+    margin-left: 5px;       /* Espacement entre le texte "Équipe" et l'icône */
+    fill: white;            /* Assure que la flèche est blanche */
+    width: 16px;            /* Ajuste la largeur de l'icône */
+    height: 25px;           /* Ajuste la hauteur de l'icône */
+    vertical-align: middle; /* Aligne verticalement avec le texte */
+}
+
+/* Style pour le conteneur principal qui va centrer la card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 30px);  /* Prend toute la hauteur de la fenêtre */
+    margin-top: 30px;
+    /*background-color: #333; */ /* Couleur de fond de la page */
+}
+
+/* Style pour la card */
+.card {
+    background-color: rgba(255, 255, 255, 0.9);  /* Blanc avec 80% d'opacité */
+    padding: 20px;
+    top:5px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);  
+    width: 1000px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 16px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colonnes */
+    gap: 50px;  /* Espacement entre les photos */
+}
+
+
+/* Style pour chaque membre de l'équipe */
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;  /* Rend les images circulaires */
+    object-fit: cover;   /* Coupe l'image si nécessaire pour s'adapter */
+    /*border: 2px solid #333; */ /* Optionnel : Ajoute une bordure */
+}
+.membre4, .membre5 {
+    grid-column: span 1.5;  /* Les deux derniers membres occupent deux colonnes */
+}
+
+.team-member p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
